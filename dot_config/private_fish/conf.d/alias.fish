@@ -1,14 +1,24 @@
 # Alias
-alias l="eza --group-directories-first -s ext"
-alias ll="eza --group --header --group-directories-first --long -s ext"
-alias la="eza --group --header --group-directories-first --long -s ext -a"
+
+# Ls alternatives
+alias l "eza --group-directories-first --sort ext"
+alias ll "eza --group --header --group-directories-first --long --sort ext"
+alias la "eza --group --header --group-directories-first --long --sort ext --all"
+
+# Zoxide complements
+alias zf "z (fd --type directory | fzf)"
+
+# Fuzzy finding
+alias ff "fd --type file | fzf --preview 'bat --color=always --line-range=:100 {}' | sd '\n' '' | wl-copy" 
+alias ffd "fd --type directory | fzf --preview 'erd --human --color force {}' | sd '\n' '' | wl-copy"
 
 # Micromamba
-alias mm="micromamba"
+alias mm micromamba
 
 # Codium
-alias code="codium"
+alias code codium
 
 # Neovim
-alias nv="NVIM_APPNAME=nvim-lazy nvim"
-alias nvk="NVIM_APPNAME=nvim-kickstart nvim"
+alias nv nvim
+alias nvl "NVIM_APPNAME=lazyvim nvim"
+
