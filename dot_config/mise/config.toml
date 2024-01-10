@@ -1,0 +1,6 @@
+[tools]
+node = "lts"
+chezmoi = "latest"
+lazygit = "latest"
+neovim = "nightly"
+shellcheck = "latest"
