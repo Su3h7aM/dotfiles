@@ -8,6 +8,9 @@ alias la "eza --icons --group --header --group-directories-first --long --sort e
 # Zoxide complements
 alias zf "z (fd --type directory | fzf)"
 
+# Git for managing dotfiles
+alias .f "git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+
 # Fuzzy finding
 #alias ff "fd --type file | fzf --preview 'bat --color=always --line-range=:100 {}' | sd '\n' '' | wl-copy" 
 #alias ffd "fd --type directory $argv | fzf --preview 'erd --human --color force {}' | sd '\n' '' | wl-copy"
