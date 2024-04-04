@@ -4,6 +4,7 @@ complete -c jj -n "__fish_use_subcommand" -l color -d 'When to colorize output (
 complete -c jj -n "__fish_use_subcommand" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_use_subcommand" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_use_subcommand" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_use_subcommand" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_use_subcommand" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_use_subcommand" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_use_subcommand" -s V -l version -d 'Print version'
@@ -60,6 +61,7 @@ complete -c jj -n "__fish_seen_subcommand_from abandon" -s s -l summary -d 'Do n
 complete -c jj -n "__fish_seen_subcommand_from abandon" -s r -d 'Ignored (but lets you pass `-r` for consistency with other commands)'
 complete -c jj -n "__fish_seen_subcommand_from abandon" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from abandon" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from abandon" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from abandon" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from abandon" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from backout" -s r -l revision -d 'The revision to apply the reverse of' -r
@@ -70,6 +72,7 @@ complete -c jj -n "__fish_seen_subcommand_from backout" -l color -d 'When to col
 complete -c jj -n "__fish_seen_subcommand_from backout" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from backout" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from backout" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from backout" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from backout" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from backout" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -78,6 +81,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subco
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -f -a "create" -d 'Create a new branch'
@@ -96,6 +100,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from create" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l glob -d 'Deprecated. Please prefix the pattern with `glob:` instead' -r
@@ -105,6 +110,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from delete" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l glob -d 'Deprecated. Please prefix the pattern with `glob:` instead' -r
@@ -114,6 +120,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from forget" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s r -l revisions -d 'Show branches whose local targets are in the given revisions' -r
@@ -121,11 +128,12 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l at-operation -l at-op -d 'Operation to load the repo at' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l color -d 'When to colorize output (always, never, auto)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l config-toml -d 'Additional configuration options (can be repeated)' -r
-complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s a -l all -d 'Show all tracking and non-tracking remote branches including the ones whose targets are synchronized with the local branches'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s a -l all-remotes -d 'Show all tracking and non-tracking remote branches including the ones whose targets are synchronized with the local branches'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s t -l tracked -d 'Show remote tracked branches only. Omits local Git-tracking branches by default'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s c -l conflicted -d 'Show conflicted branches only'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -134,6 +142,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from rename" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -s r -l revision -d 'The branch\'s target revision' -r
@@ -144,6 +153,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -s B -l allow-backwards -d 'Allow moving the branch backwards or sideways'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from set" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -152,6 +162,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from track" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -160,6 +171,7 @@ complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from untrack" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from branch; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from create; and not __fish_seen_subcommand_from delete; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from track; and not __fish_seen_subcommand_from untrack; and not __fish_seen_subcommand_from help" -f -a "create" -d 'Create a new branch'
@@ -178,6 +190,7 @@ complete -c jj -n "__fish_seen_subcommand_from cat" -l color -d 'When to coloriz
 complete -c jj -n "__fish_seen_subcommand_from cat" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from cat" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from cat" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from cat" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from cat" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from cat" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from checkout" -s m -l message -d 'The change description to use' -r
@@ -188,6 +201,7 @@ complete -c jj -n "__fish_seen_subcommand_from checkout" -l config-toml -d 'Addi
 complete -c jj -n "__fish_seen_subcommand_from checkout" -s r -d 'Ignored (but lets you pass `-r` for consistency with other commands)'
 complete -c jj -n "__fish_seen_subcommand_from checkout" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from checkout" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from checkout" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from checkout" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from checkout" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from chmod" -s r -l revision -d 'The revision to update' -r
@@ -197,6 +211,7 @@ complete -c jj -n "__fish_seen_subcommand_from chmod" -l color -d 'When to color
 complete -c jj -n "__fish_seen_subcommand_from chmod" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from chmod" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from chmod" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from chmod" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from chmod" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from chmod" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from commit" -l tool -d 'Specify diff editor to be used (implies --interactive)' -r
@@ -208,6 +223,7 @@ complete -c jj -n "__fish_seen_subcommand_from commit" -l config-toml -d 'Additi
 complete -c jj -n "__fish_seen_subcommand_from commit" -s i -l interactive -d 'Interactively choose which changes to include in the first commit'
 complete -c jj -n "__fish_seen_subcommand_from commit" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from commit" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from commit" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from commit" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from commit" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -216,6 +232,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subco
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List variables set in config file, along with their values'
@@ -235,6 +252,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -l repo -d 'Target the repo-level config'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -243,6 +261,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from get" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -253,6 +272,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -l repo -d 'Target the repo-level config'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from set" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -263,6 +283,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -l repo -d 'Target the repo-level config'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from edit" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -273,6 +294,7 @@ complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -l repo -d 'Target the repo-level config'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from path" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from config; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from path; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List variables set in config file, along with their values'
@@ -287,6 +309,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and not __fish_seen_subcommand_from revset; and not __fish_seen_subcommand_from workingcopy; and not __fish_seen_subcommand_from template; and not __fish_seen_subcommand_from index; and not __fish_seen_subcommand_from reindex; and not __fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from tree; and not __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from help" -f -a "revset" -d 'Evaluate revset to full commit IDs'
@@ -304,6 +327,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from revset" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -312,6 +336,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from workingcopy" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -320,6 +345,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from template" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -328,6 +354,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from index" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -336,6 +363,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from reindex" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l display -r -f -a "{operation	'Show only the operation details',id	'Show the operation id only',view	'Show only the view details',all	'Show both the view and the operation'}"
@@ -345,6 +373,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from operation" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -s r -l revision -r
@@ -356,6 +385,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from tree" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -364,6 +394,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -f -a "query-clock"
@@ -376,6 +407,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-clock" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -384,6 +416,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from query-changed-files" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -392,6 +425,7 @@ complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from reset-clock" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from debug; and __fish_seen_subcommand_from watchman; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from query-clock; and not __fish_seen_subcommand_from query-changed-files; and not __fish_seen_subcommand_from reset-clock; and not __fish_seen_subcommand_from help" -f -a "query-clock"
@@ -421,6 +455,7 @@ complete -c jj -n "__fish_seen_subcommand_from describe" -l no-edit -d 'Don\'t o
 complete -c jj -n "__fish_seen_subcommand_from describe" -l reset-author -d 'Reset the author to the configured user'
 complete -c jj -n "__fish_seen_subcommand_from describe" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from describe" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from describe" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from describe" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from describe" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from diff" -s r -l revision -d 'Show changes in this revision, compared to its parent(s)' -r
@@ -439,6 +474,7 @@ complete -c jj -n "__fish_seen_subcommand_from diff" -l git -d 'Show a Git-forma
 complete -c jj -n "__fish_seen_subcommand_from diff" -l color-words -d 'Show a word-level diff with changes indicated only by color'
 complete -c jj -n "__fish_seen_subcommand_from diff" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from diff" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from diff" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from diff" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from diff" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -s r -l revision -d 'The revision to touch up. Defaults to @ if neither --to nor --from are specified' -r
@@ -451,6 +487,7 @@ complete -c jj -n "__fish_seen_subcommand_from diffedit" -l color -d 'When to co
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from diffedit" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from diffedit" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -460,6 +497,7 @@ complete -c jj -n "__fish_seen_subcommand_from duplicate" -l config-toml -d 'Add
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -s r -d 'Ignored (but lets you pass `-r` for consistency with other commands)'
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from duplicate" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from duplicate" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from edit" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -469,6 +507,7 @@ complete -c jj -n "__fish_seen_subcommand_from edit" -l config-toml -d 'Addition
 complete -c jj -n "__fish_seen_subcommand_from edit" -s r -d 'Ignored (but lets you pass `-r` for consistency with other commands)'
 complete -c jj -n "__fish_seen_subcommand_from edit" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from edit" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from edit" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from edit" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from edit" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from files" -s r -l revision -d 'The revision to list files in' -r
@@ -478,6 +517,7 @@ complete -c jj -n "__fish_seen_subcommand_from files" -l color -d 'When to color
 complete -c jj -n "__fish_seen_subcommand_from files" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from files" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from files" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from files" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from files" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from files" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -486,6 +526,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcomma
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and not __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from init; and not __fish_seen_subcommand_from fetch; and not __fish_seen_subcommand_from clone; and not __fish_seen_subcommand_from push; and not __fish_seen_subcommand_from import; and not __fish_seen_subcommand_from export; and not __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from help" -f -a "remote" -d 'Manage Git remotes'
@@ -503,6 +544,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -f -a "add" -d 'Add a Git remote'
@@ -516,6 +558,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from add" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -524,6 +567,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from remove" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -532,6 +576,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from rename" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -540,6 +585,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from remote; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from remove; and not __fish_seen_subcommand_from rename; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -f -a "add" -d 'Add a Git remote'
@@ -555,6 +601,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -l colocate -d 'Specifies that the `jj` repo should also be a valid `git` repo, allowing the use of both `jj` and `git` commands in the same directory'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from init" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -s b -l branch -d 'Fetch only some of the branches' -r
@@ -566,6 +613,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -l all-remotes -d 'Fetch from all remotes'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from fetch" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -575,6 +623,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -l colocate -d 'Whether or not to colocate the Jujutsu repo with the git repo'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from clone" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l remote -d 'The remote to push to (only named remotes are supported)' -r
@@ -591,6 +640,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l dry-run -d 'Only display what will change on the remote'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from push" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -599,6 +649,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from import" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -607,6 +658,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from export" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -615,6 +667,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -f -a "print-gitmodules" -d 'Print the relevant contents from .gitmodules. For debugging purposes only'
@@ -626,6 +679,7 @@ complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from print-gitmodules" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from git; and __fish_seen_subcommand_from submodule; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from print-gitmodules; and not __fish_seen_subcommand_from help" -f -a "print-gitmodules" -d 'Print the relevant contents from .gitmodules. For debugging purposes only'
@@ -652,6 +706,7 @@ complete -c jj -n "__fish_seen_subcommand_from init" -l config-toml -d 'Addition
 complete -c jj -n "__fish_seen_subcommand_from init" -l git -d 'DEPRECATED: Use `jj git init` Use the Git backend, creating a jj repo backed by a Git repo'
 complete -c jj -n "__fish_seen_subcommand_from init" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from init" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from init" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from init" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from init" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -l from -d 'Show changes from this revision' -r
@@ -669,9 +724,10 @@ complete -c jj -n "__fish_seen_subcommand_from interdiff" -l git -d 'Show a Git-
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -l color-words -d 'Show a word-level diff with changes indicated only by color'
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from interdiff" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from interdiff" -s h -l help -d 'Print help (see more with \'--help\')'
-complete -c jj -n "__fish_seen_subcommand_from log" -s r -l revisions -d 'Which revisions to show. Defaults to the `revsets.log` setting, or `@ | ancestors(immutable_heads().., 2) | trunk()` if it is not set' -r
+complete -c jj -n "__fish_seen_subcommand_from log" -s r -l revisions -d 'Which revisions to show. If no paths nor revisions are specified, this defaults to the `revsets.log` setting, or `@ | ancestors(immutable_heads().., 2) | trunk()` if it is not set' -r
 complete -c jj -n "__fish_seen_subcommand_from log" -s l -l limit -d 'Limit number of revisions to show' -r
 complete -c jj -n "__fish_seen_subcommand_from log" -s T -l template -d 'Render each revision using the given template' -r
 complete -c jj -n "__fish_seen_subcommand_from log" -l tool -d 'Generate diff by external command' -r
@@ -690,6 +746,7 @@ complete -c jj -n "__fish_seen_subcommand_from log" -l git -d 'Show a Git-format
 complete -c jj -n "__fish_seen_subcommand_from log" -l color-words -d 'Show a word-level diff with changes indicated only by color'
 complete -c jj -n "__fish_seen_subcommand_from log" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from log" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from log" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from log" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from log" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from merge" -s m -l message -d 'The change description to use' -r
@@ -705,6 +762,7 @@ complete -c jj -n "__fish_seen_subcommand_from merge" -s A -l insert-after -l af
 complete -c jj -n "__fish_seen_subcommand_from merge" -s B -l insert-before -l before -d 'Insert the new change between the target commit(s) and their parents'
 complete -c jj -n "__fish_seen_subcommand_from merge" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from merge" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from merge" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from merge" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from merge" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from move" -s f -l from -d 'Move part of this change into the destination' -r
@@ -717,6 +775,7 @@ complete -c jj -n "__fish_seen_subcommand_from move" -l config-toml -d 'Addition
 complete -c jj -n "__fish_seen_subcommand_from move" -s i -l interactive -d 'Interactively choose which parts to move'
 complete -c jj -n "__fish_seen_subcommand_from move" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from move" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from move" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from move" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from move" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from new" -s m -l message -d 'The change description to use' -r
@@ -732,6 +791,7 @@ complete -c jj -n "__fish_seen_subcommand_from new" -s A -l insert-after -l afte
 complete -c jj -n "__fish_seen_subcommand_from new" -s B -l insert-before -l before -d 'Insert the new change between the target commit(s) and their parents'
 complete -c jj -n "__fish_seen_subcommand_from new" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from new" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from new" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from new" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from new" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from next" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -741,6 +801,7 @@ complete -c jj -n "__fish_seen_subcommand_from next" -l config-toml -d 'Addition
 complete -c jj -n "__fish_seen_subcommand_from next" -l edit -d 'Instead of creating a new working-copy commit on top of the target commit (like `jj new`), edit the target commit directly (like `jj edit`)'
 complete -c jj -n "__fish_seen_subcommand_from next" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from next" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from next" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from next" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from next" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from obslog" -s r -l revision -r
@@ -761,6 +822,7 @@ complete -c jj -n "__fish_seen_subcommand_from obslog" -l git -d 'Show a Git-for
 complete -c jj -n "__fish_seen_subcommand_from obslog" -l color-words -d 'Show a word-level diff with changes indicated only by color'
 complete -c jj -n "__fish_seen_subcommand_from obslog" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from obslog" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from obslog" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from obslog" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from obslog" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -769,6 +831,7 @@ complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_su
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -f -a "abandon" -d 'Abandon operation history'
@@ -782,6 +845,7 @@ complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from abandon" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -s l -l limit -d 'Limit number of operations to show' -r
@@ -793,6 +857,7 @@ complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -l no-graph -d 'Don\'t show the graph, show a flat list of operations'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from log" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l what -d 'What portions of the local state to restore (can be repeated)' -r -f -a "{repo	'The jj repo state and local branches',remote-tracking	'The remote-tracking branches. Do not restore these if you\'d like to push after the undo'}"
@@ -802,6 +867,7 @@ complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from undo" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l what -d 'What portions of the local state to restore (can be repeated)' -r -f -a "{repo	'The jj repo state and local branches',remote-tracking	'The remote-tracking branches. Do not restore these if you\'d like to push after the undo'}"
@@ -811,6 +877,7 @@ complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from restore" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from operation; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from abandon; and not __fish_seen_subcommand_from log; and not __fish_seen_subcommand_from undo; and not __fish_seen_subcommand_from restore; and not __fish_seen_subcommand_from help" -f -a "abandon" -d 'Abandon operation history'
@@ -825,10 +892,11 @@ complete -c jj -n "__fish_seen_subcommand_from prev" -l config-toml -d 'Addition
 complete -c jj -n "__fish_seen_subcommand_from prev" -l edit -d 'Edit the parent directly, instead of moving the working-copy commit'
 complete -c jj -n "__fish_seen_subcommand_from prev" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from prev" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from prev" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from prev" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from prev" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s b -l branch -d 'Rebase the whole branch relative to destination\'s ancestors (can be repeated)' -r
-complete -c jj -n "__fish_seen_subcommand_from rebase" -s s -l source -d 'Rebase specified revision(s) together their tree of descendants (can be repeated)' -r
+complete -c jj -n "__fish_seen_subcommand_from rebase" -s s -l source -d 'Rebase specified revision(s) together with their trees of descendants (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s r -l revision -d 'Rebase only this revision, rebasing descendants onto this revision\'s parent(s)' -r
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s d -l destination -d 'The revision(s) to rebase onto (can be repeated to create a merge commit)' -r
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -839,6 +907,7 @@ complete -c jj -n "__fish_seen_subcommand_from rebase" -l skip-empty -d 'If true
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s L -l allow-large-revsets -d 'Deprecated. Please prefix the revset with `all:` instead'
 complete -c jj -n "__fish_seen_subcommand_from rebase" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from rebase" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from rebase" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from rebase" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from rebase" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from resolve" -s r -l revision -r
@@ -848,9 +917,9 @@ complete -c jj -n "__fish_seen_subcommand_from resolve" -l at-operation -l at-op
 complete -c jj -n "__fish_seen_subcommand_from resolve" -l color -d 'When to colorize output (always, never, auto)' -r
 complete -c jj -n "__fish_seen_subcommand_from resolve" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from resolve" -s l -l list -d 'Instead of resolving one conflict, list all the conflicts'
-complete -c jj -n "__fish_seen_subcommand_from resolve" -s q -l quiet -d 'Do not print the list of remaining conflicts (if any) after resolving a conflict'
 complete -c jj -n "__fish_seen_subcommand_from resolve" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from resolve" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from resolve" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from resolve" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from resolve" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from restore" -l from -d 'Revision to restore from (source)' -r
@@ -863,6 +932,7 @@ complete -c jj -n "__fish_seen_subcommand_from restore" -l color -d 'When to col
 complete -c jj -n "__fish_seen_subcommand_from restore" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from restore" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from restore" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from restore" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from restore" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from restore" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from revert" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -871,6 +941,7 @@ complete -c jj -n "__fish_seen_subcommand_from revert" -l color -d 'When to colo
 complete -c jj -n "__fish_seen_subcommand_from revert" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from revert" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from revert" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from revert" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from revert" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from revert" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from root" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -879,6 +950,7 @@ complete -c jj -n "__fish_seen_subcommand_from root" -l color -d 'When to colori
 complete -c jj -n "__fish_seen_subcommand_from root" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from root" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from root" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from root" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from root" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from root" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from run" -s r -l revisions -d 'The revisions to change' -r
@@ -890,6 +962,7 @@ complete -c jj -n "__fish_seen_subcommand_from run" -l config-toml -d 'Additiona
 complete -c jj -n "__fish_seen_subcommand_from run" -s x -d 'A no-op option to match the interface of `git rebase -x`'
 complete -c jj -n "__fish_seen_subcommand_from run" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from run" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from run" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from run" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from run" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from show" -s T -l template -d 'Render a revision using the given template' -r
@@ -907,6 +980,7 @@ complete -c jj -n "__fish_seen_subcommand_from show" -l git -d 'Show a Git-forma
 complete -c jj -n "__fish_seen_subcommand_from show" -l color-words -d 'Show a word-level diff with changes indicated only by color'
 complete -c jj -n "__fish_seen_subcommand_from show" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from show" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from show" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from show" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from show" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -915,6 +989,7 @@ complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subco
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List the patterns that are currently present in the working copy'
@@ -928,6 +1003,7 @@ complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l add -d 'Patterns to add to the working copy' -r -F
@@ -939,6 +1015,7 @@ complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l clear -d 'Include no files in the working copy (combine with --add)'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from set" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -947,6 +1024,7 @@ complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from reset" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -955,6 +1033,7 @@ complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcomman
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from edit" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from sparse; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from reset; and not __fish_seen_subcommand_from edit; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List the patterns that are currently present in the working copy'
@@ -969,13 +1048,15 @@ complete -c jj -n "__fish_seen_subcommand_from split" -l at-operation -l at-op -
 complete -c jj -n "__fish_seen_subcommand_from split" -l color -d 'When to colorize output (always, never, auto)' -r
 complete -c jj -n "__fish_seen_subcommand_from split" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from split" -s i -l interactive -d 'Interactively choose which parts to split. This is the default if no paths are provided'
+complete -c jj -n "__fish_seen_subcommand_from split" -s s -l siblings -d 'Split the revision into two siblings instead of a parent and child'
 complete -c jj -n "__fish_seen_subcommand_from split" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from split" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from split" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from split" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from split" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from squash" -s r -l revision -d 'Revision to squash into its parent (default: @)' -r
 complete -c jj -n "__fish_seen_subcommand_from squash" -l from -d 'Revision to squash from (default: @)' -r
-complete -c jj -n "__fish_seen_subcommand_from squash" -l into -d 'Revision to squash into (default: @)' -r
+complete -c jj -n "__fish_seen_subcommand_from squash" -l into -l to -d 'Revision to squash into (default: @)' -r
 complete -c jj -n "__fish_seen_subcommand_from squash" -s m -l message -d 'The description to use for squashed revision (don\'t open editor)' -r
 complete -c jj -n "__fish_seen_subcommand_from squash" -l tool -d 'Specify diff editor to be used (implies --interactive)' -r
 complete -c jj -n "__fish_seen_subcommand_from squash" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -985,6 +1066,7 @@ complete -c jj -n "__fish_seen_subcommand_from squash" -l config-toml -d 'Additi
 complete -c jj -n "__fish_seen_subcommand_from squash" -s i -l interactive -d 'Interactively choose which parts to squash'
 complete -c jj -n "__fish_seen_subcommand_from squash" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from squash" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from squash" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from squash" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from squash" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from status" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -993,6 +1075,7 @@ complete -c jj -n "__fish_seen_subcommand_from status" -l color -d 'When to colo
 complete -c jj -n "__fish_seen_subcommand_from status" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from status" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from status" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from status" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from status" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from status" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1001,6 +1084,7 @@ complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcomma
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from tag; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List tags'
@@ -1011,6 +1095,7 @@ complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_f
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from tag; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from help" -f -a "list" -d 'List tags'
@@ -1021,6 +1106,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcomm
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -f -a "completion" -d 'Print a command-line-completion script'
@@ -1038,6 +1124,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -l zsh -d 'Deprecated. Use the SHELL positional argument instead'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from completion" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l expire -d 'Time threshold' -r
@@ -1047,6 +1134,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from gc" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1055,6 +1143,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from mangen" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1063,6 +1152,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from markdown-help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1071,6 +1161,7 @@ complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from config-schema" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from util; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from completion; and not __fish_seen_subcommand_from gc; and not __fish_seen_subcommand_from mangen; and not __fish_seen_subcommand_from markdown-help; and not __fish_seen_subcommand_from config-schema; and not __fish_seen_subcommand_from help" -f -a "completion" -d 'Print a command-line-completion script'
@@ -1086,6 +1177,7 @@ complete -c jj -n "__fish_seen_subcommand_from undo" -l color -d 'When to colori
 complete -c jj -n "__fish_seen_subcommand_from undo" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from undo" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from undo" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from undo" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from undo" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from undo" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -s r -l revision -r
@@ -1097,6 +1189,7 @@ complete -c jj -n "__fish_seen_subcommand_from unsquash" -l config-toml -d 'Addi
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -s i -l interactive -d 'Interactively choose which parts to unsquash'
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from unsquash" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from unsquash" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from untrack" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1105,6 +1198,7 @@ complete -c jj -n "__fish_seen_subcommand_from untrack" -l color -d 'When to col
 complete -c jj -n "__fish_seen_subcommand_from untrack" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from untrack" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from untrack" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from untrack" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from untrack" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from untrack" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from version" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1113,6 +1207,7 @@ complete -c jj -n "__fish_seen_subcommand_from version" -l color -d 'When to col
 complete -c jj -n "__fish_seen_subcommand_from version" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from version" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from version" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from version" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from version" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from version" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1121,6 +1216,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_su
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -f -a "add" -d 'Add a workspace'
@@ -1137,6 +1233,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from add" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1145,6 +1242,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from forget" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1153,6 +1251,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from list" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1161,6 +1260,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from root" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -s R -l repository -d 'Path to repository to operate on' -r -f -a "(__fish_complete_directories)"
@@ -1169,6 +1269,7 @@ complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcom
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -l config-toml -d 'Additional configuration options (can be repeated)' -r
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -l ignore-working-copy -d 'Don\'t snapshot the working copy, and don\'t update it'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -l debug -d 'Enable debug logging'
+complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -l quiet -d 'Silence non-primary command output'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -l no-pager -d 'Disable the pager'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from update-stale" -s h -l help -d 'Print help (see more with \'--help\')'
 complete -c jj -n "__fish_seen_subcommand_from workspace; and __fish_seen_subcommand_from help; and not __fish_seen_subcommand_from add; and not __fish_seen_subcommand_from forget; and not __fish_seen_subcommand_from list; and not __fish_seen_subcommand_from root; and not __fish_seen_subcommand_from update-stale; and not __fish_seen_subcommand_from help" -f -a "add" -d 'Add a workspace'
