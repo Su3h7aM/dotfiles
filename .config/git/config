@@ -1,0 +1,28 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	name = Su3h7aM
+	email = matheusgasource@gmail.com
+	signingKey = /home/matheus/.ssh/id_rsa.pub
+[init]
+	defaultBranch = main
+[alias]
+	st = status
+	c = commit -m
+[rerere]
+	enabled = true
+[gpg]
+	format = ssh
+[fetch]
+	writeCommitGraph = true
+[core]
+	untrackedCache = true
+	commitgraph = true
+[index]
+	version = 4
+[push]
+	autoSetupRemote = true
