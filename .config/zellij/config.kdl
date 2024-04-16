@@ -1,0 +1,13 @@
+theme "catppuccin-mocha"
+default_layout "default"
+pane_frames true
+mouse_mode true
+scroll_buffer_size 10000
+copy_command "wl-copy"
+
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
+
