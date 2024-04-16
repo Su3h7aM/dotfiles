@@ -17,10 +17,13 @@ vim.filetype.add({ extension = { templ = "templ" } })
 g.mapleader = ' '
 g.maplocalleader = ' '
 
+o.undofile = true
+
 g.netrw_banner = 0
 vim.o.autochdir = false
 
 o.termguicolors = true
+g.have_nerd_font = true
 
 o.smartindent = true
 o.smarttab = true
@@ -34,6 +37,7 @@ o.relativenumber = true
 
 o.wrap = false
 
+o.mouse = "a"
 o.clipboard = "unnamedplus"
 
 o.virtualedit = "block"
@@ -44,3 +48,7 @@ o.splitbelow = true
 o.splitright = true
 
 o.ignorecase = true
+o.smartcase = true
+
+o.updatetime = 250
+o.timeoutlen = 300

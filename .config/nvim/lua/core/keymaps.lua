@@ -32,14 +32,21 @@ function keymaps.global()
     map("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
     map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
     map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+
+    map("n", "gd", "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>", { desc = "Goto definition" })
+    map("n", "gr", "<cmd>lua require('telescope.builtin').lsp_references()<cr>", { desc = "Goto references" })
+    map("n", "gi", "<cmd>lua require('telescope.builtin').lsp_implementations()<cr>", { desc = "Goto implementations" })
+
 end
 
 keymaps.telescope = {
-    {"<leader><space>", "<cmd>Telescope find_files<cr>", desc = "Find files"},
-    {"<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep"},
-    {"<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers"},
-    {"<Leader>fh", "<cmd>lua require'telescope.builtin'.find_files({ find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden', '--no-ignore'} })<cr>", desc = "Find with hidden files"},
-    {"<leader>ff", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Current buffer fuzzy find"}
+    {"<leader>sh", "<cmd>Telescope help", desc = "Search help"},
+    {"<leader>sk", "<cmd>Telescope keymaps", desc = "Keymaps"},
+    {"<leader>sf", "<cmd>Telescope find_files<cr>", desc = "Find files"},
+    {"<leader>sg", "<cmd>Telescope live_grep<cr>", desc = "Live grep"},
+    {"<leader><leader>", "<cmd>Telescope buffers<cr>", desc = "Buffers"},
+    {"<Leader>sa", "<cmd>lua require'telescope.builtin'.find_files({ find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden', '--no-ignore'} })<cr>", desc = "Find with hidden files"},
+    {"<leader>sb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Current buffer fuzzy find"}
 }
 
 keymaps.neotree = {

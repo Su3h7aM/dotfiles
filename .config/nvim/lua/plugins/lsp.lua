@@ -2,7 +2,7 @@ local keymaps = require("core.keymaps")
 
 local M = {}
 
-local servers = { "lua_ls", "bashls", "html", "htmx", "gopls", "templ", "biome" }
+local servers = { "lua_ls", "bashls", "html", "htmx", "gopls", "templ", "biome" , "ols", "nim_langserver" }
 
 M[1] = {
     "williamboman/mason.nvim",
