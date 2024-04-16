@@ -1,0 +1,16 @@
+[user]
+name = "Su3h7aM"
+email = "matheusgasource@gmail.com"
+
+[ui]
+pager = "bat -p"
+allow-init-native = true
+default-command = "l"
+log-synthetic-elided-nodes = true
+
+[aliases]
+gf = ["git", "fetch"]
+rb = ["rebase", "-d"]
+clone = ["git", "clone", "--colocate"]
+l = ["log", "-r", "::@"]
+la = ["log", "-r", "all()"]
