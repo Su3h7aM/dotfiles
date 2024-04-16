@@ -21,4 +21,3 @@ alias mm micromamba
 # Neovim
 alias nv nvim
 alias nvl "NVIM_APPNAME=lazyvim nvim"
-
