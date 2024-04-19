@@ -2,8 +2,9 @@
 
 # Ls alternatives
 alias l "eza --icons --group-directories-first --sort ext"
-alias ll "eza --icons --group --header --group-directories-first --long --sort ext"
-alias la "eza --icons --group --header --group-directories-first --long --sort ext --all"
+alias ll "l --long --group --header"
+alias la "ll --all"
+alias lt "l --tree"
 
 # Zoxide complements
 alias zf "z (fd --type directory | fzf)"
